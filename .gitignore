@@ -105,6 +105,3 @@ dist
 
 # misc
 .DS_Store
-
-# build
-build/
