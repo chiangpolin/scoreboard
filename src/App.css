@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Architects Daughter', cursive;
+  color: #261e47; /*TETSUKON*/
+  background: linear-gradient(120deg, #fad689, #8a6bbe 60%, #005caf 100%);
+  /*USUKI FUJIMURASAKI RURI */
+}
+
+/* Header */
+
+.stats td {
+  font-size: 24px;
+}
+
+.scoreboard {
+  display: flex; /* (header, [...player], form) */
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.scoreboard header {
+  display: flex; /* (tabel, h1, .timer) */
+  flex: 1 1 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 5px auto;
+  min-height: 100px;
+}
+
+header table {
+  display: flex;
+  flex: 1 1;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  display: flex;
+  flex: 3 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.timer {
+  display: flex;
+  flex: 1 1;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.seconds {
+  display: flex;
+  flex: 1 1 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.timer-buttons {
+  display: flex;
+  flex: 1 1 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer button {
+  flex: 1;
+  margin: 5px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: 'Architects Daughter', cursive;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Body */
+
+.player {
+  display: flex; /* (player-icon, player-name, counter) */
+  flex: 1 1 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 2px auto;
+  height: 60px;
+}
+
+.player:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.player-icon {
+  display: flex;
+  flex: 1 1;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.player-icon button {
+  margin: 5px;
+  height: 100%;
+  width: 100%;
+  max-width: 60px;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 36px;
+  font-family: 'Architects Daughter', cursive;
+  background-color: rgba(203, 64, 66, 0.6); /*AKABENI*/
+}
+
+.player-icon svg {
+  margin: auto;
+  height: 36px;
+  width: 100%;
+}
+
+.player-name {
+  display: flex;
+  flex: 3 1;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.counter {
+  display: flex;
+  flex: 1 1;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.counter-score {
+  flex: 1 1;
+  text-align: center;
+  padding-top: 18px;
+  height: 100%;
+  font-size: 24px;
+}
+
+.counter-action {
+  flex: 1 1;
+  margin: 5px;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 36px;
+  font-family: 'Architects Daughter', cursive;
+  background-color: rgba(81, 168, 221, 0.6); /*GUNJYO*/
+}
+
+/* Form */
+
+.scoreboard form {
+  display: flex; /* (player-name, counter) */
+  flex: 1 1 100%;
+  justify-content: center;
+}
+
+.form-input {
+  flex: 4 2;
+  margin: 5px;
+  padding-left: 15px;
+  min-height: 60px;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: 'Architects Daughter', cursive;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.form-submit {
+  flex: 1 1;
+  margin: 5px;
+  min-height: 60px;
+  border: 1px solid #fcfaf2; /* SHIRONERI */
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: 'Architects Daughter', cursive;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+svg {
+  color: #fcfaf2; /* SHIRONERI */
+}
